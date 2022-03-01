@@ -1,14 +1,14 @@
 import React from "react";
 
-function Portfolio() {
+function About() {
   return (
     <>
       <main>
-        <h2>Portfolio</h2>
+        <h2>About</h2>
         <p>Some text here as well</p>
       </main>
     </>
   );
 }
 
-export default Portfolio;
+export default About;

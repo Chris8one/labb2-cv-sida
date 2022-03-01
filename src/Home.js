@@ -1,9 +1,14 @@
-const Home = () => {
+import React from "react";
+
+function Home() {
   return (
-    <div>
-      <h1>Chris Granbäck</h1>
-    </div>
+    <>
+      <main>
+        <h2>Home</h2>
+        <p>Some text here as well</p>
+      </main>
+    </>
   );
-};
+}
 
 export default Home;
