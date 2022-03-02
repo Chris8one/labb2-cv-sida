@@ -26,7 +26,7 @@ function HomeNav() {
     <>
       <nav>
         <ul className="my-css">
-          <li>Home</li>
+          <li className="active-link">Home</li>
           <li>
             <Link to="/portfolio">Portfolio</Link>
           </li>
@@ -52,7 +52,7 @@ function PortfolioNav() {
           <li>
             <Link to="/">Home</Link>
           </li>
-          <li>Portfolio</li>
+          <li className="active-link">Portfolio</li>
           <li>
             <Link to="/cv">CV</Link>
           </li>
@@ -77,7 +77,7 @@ function CVNav() {
           <li>
             <Link to="/portfolio">Portfolio</Link>
           </li>
-          <li>CV</li>
+          <li className="active-link">CV</li>
           <li>
             <Link to="/about">About</Link>
           </li>
@@ -102,7 +102,7 @@ function AboutNav() {
           <li>
             <Link to="/cv">CV</Link>
           </li>
-          <li>About</li>
+          <li className="active-link">About</li>
         </ul>
       </nav>
       <About />

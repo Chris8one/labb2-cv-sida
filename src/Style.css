@@ -72,7 +72,6 @@ li a {
 .hr-grad {
   border: 0;
   height: 3px;
-  width: 70%;
   margin-left: 0;
-  background-image: linear-gradient(to right, #e40cf8, #3ccde0, rgba(110, 110, 110, 0));
+  background-image: linear-gradient(to right, #e40cf8, rgba(110, 110, 110, 0), #3ccde0, rgba(110, 110, 110, 0), #e40cf8);
 }/*# sourceMappingURL=Style.css.map */
