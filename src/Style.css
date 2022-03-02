@@ -30,10 +30,15 @@
 
 li {
   list-style-type: none;
+  text-decoration: none;
   display: inline-block;
   width: calc(100% / 12);
   height: 60px;
   text-align: center;
+}
+
+li a {
+  text-decoration: none;
 }
 
 .nav-attr {
@@ -50,4 +55,18 @@ li {
   to {
     transform: rotate(360deg);
   }
+}
+
+.hr-grad {
+  border: 0;
+  height: 3px;
+  width: 70%;
+  margin-left: 0;
+  background-image: linear-gradient(
+    to right,
+    /* rgba(110, 110, 110, 0),
+    rgb(60, 205, 224), */ rgb(228, 12, 248),
+    rgb(60, 205, 224),
+    rgba(110, 110, 110, 0)
+  );
 }

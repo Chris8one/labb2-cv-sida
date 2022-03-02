@@ -5,7 +5,7 @@ import Portfolio from "./Portfolio";
 import CV from "./CV";
 import About from "./About";
 import NoPage from "./NoPage";
-import "./App.css";
+import "./Style.css";
 
 function App() {
   return (
@@ -38,6 +38,7 @@ function HomeNav() {
           </li>
         </ul>
       </nav>
+      <hr className="hr-grad" />
       <Home />
     </>
   );
