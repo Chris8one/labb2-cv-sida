@@ -1,17 +1,25 @@
 import React from "react";
 
 function CV() {
-  const dataUrl = "data.json";
+  const data = "data.json";
+  let outputText = "";
 
-  async function getData() {
-    const response = await fetch(dataUrl);
-    const data = await response.json();
+  for (let i = 0; i < data.length; i++) {
+    let obj = data[i];
+    for (let key in obj) {
+      let value = obj[key];
+      outputText = (
+        <li>
+          {key} + {value}
+        </li>
+      );
+    }
   }
   return (
     <>
       <main>
         <h2>CV</h2>
-        <p>Some text here as well</p>
+        <ul>{outputText}</ul>
       </main>
     </>
   );
