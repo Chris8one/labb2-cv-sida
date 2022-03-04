@@ -1,25 +1,21 @@
 import React from "react";
+import Data from "./data.json";
 
 function CV() {
-  const data = "data.json";
-  let outputText = "";
-
-  for (let i = 0; i < data.length; i++) {
-    let obj = data[i];
-    for (let key in obj) {
-      let value = obj[key];
-      outputText = (
-        <li>
-          {key} + {value}
-        </li>
-      );
-    }
-  }
   return (
     <>
       <main>
-        <h2>CV</h2>
-        <ul>{outputText}</ul>
+        <h2>Work/Education</h2>
+        {Data.map((post) => {
+          return (
+            <div className="post-settings" key={post.id}>
+              <h3>{post.job}</h3>
+              <h4>{post.date}</h4>
+              <p>{post.position}</p>
+              <hr className="hr-grad-post" />
+            </div>
+          );
+        })}
       </main>
     </>
   );

@@ -1,4 +1,5 @@
-import * as React from "react";
+// import * as React from "react";
+import React from 'react';
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import Portfolio from "./Portfolio";
@@ -25,7 +26,7 @@ function HomeNav() {
   return (
     <>
       <nav>
-        <ul className="my-css">
+        <ul>
           <li className="active-link">Home</li>
           <li>
             <Link to="/portfolio">Portfolio</Link>
@@ -48,7 +49,7 @@ function PortfolioNav() {
   return (
     <>
       <nav>
-        <ul className="my-css">
+        <ul>
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -61,6 +62,7 @@ function PortfolioNav() {
           </li>
         </ul>
       </nav>
+      <hr className="hr-grad" />
       <Portfolio />
     </>
   );
@@ -70,7 +72,7 @@ function CVNav() {
   return (
     <>
       <nav>
-        <ul className="my-css">
+        <ul>
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -83,6 +85,7 @@ function CVNav() {
           </li>
         </ul>
       </nav>
+      <hr className="hr-grad" />
       <CV />
     </>
   );
@@ -92,7 +95,7 @@ function AboutNav() {
   return (
     <>
       <nav>
-        <ul className="my-css">
+        <ul>
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -105,6 +108,7 @@ function AboutNav() {
           <li className="active-link">About</li>
         </ul>
       </nav>
+      <hr className="hr-grad" />
       <About />
     </>
   );

@@ -1,25 +1,29 @@
 [
   {
+    "id": 1,
     "date": "05/2014 - 11/2016",
     "job": "Handelsstål",
     "position": "Warehouse worker"
   },
 
   {
-    "date": "",
-    "job": "",
-    "position": ""
+    "id": 2,
+    "date": "11/2016 - 02/2018",
+    "job": "Star Bygg",
+    "position": "Graduated with two educations, as a carpenter and as a tiler"
   },
 
   {
-    "date": "",
-    "job": "",
-    "position": ""
+    "id": 3,
+    "date": "11/2019 - 02/2021",
+    "job": "Code Institute, Ireland",
+    "position": "Studied Full Stack Development"
   },
 
   {
-    "date": "",
-    "job": "",
-    "position": ""
+    "id": 4,
+    "date": "10/2021 - Present",
+    "job": "Edugrade",
+    "position": "Studying Systems Development C#.NET with AI-competens"
   }
 ]

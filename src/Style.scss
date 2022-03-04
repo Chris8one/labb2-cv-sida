@@ -28,21 +28,27 @@
   color: #61dafb;
 }
 
-li {
-  list-style-type: none;
-  text-decoration: none;
-  display: inline-block;
-  width: calc(100% / 12);
-  height: 60px;
-  text-align: center;
-  a {
+ul {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  li {
+    list-style-type: none;
     text-decoration: none;
-    color: #3ccde0;
+    display: inline-block;
+    width: calc(100% / 12);
+    height: 60px;
+    text-align: center;
+    a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #3ccde0;
+    }
   }
 }
 
 .active-link {
   color: #e40cf8;
+  font-weight: 500;
 }
 
 .nav-attr {
@@ -64,8 +70,6 @@ li {
 .hr-grad {
   border: 0;
   height: 3px;
-  // width: 70%;
-  margin-left: 0;
   background-image: linear-gradient(
     to right,
     /* rgba(110, 110, 110, 0),
@@ -75,4 +79,35 @@ li {
     rgba(110, 110, 110, 0),
     rgb(228, 12, 248)
   );
+}
+
+.hr-grad-post {
+  border: 0;
+  height: 3px;
+  width: 40%;
+  background-image: linear-gradient(
+    to right,
+    /* rgba(110, 110, 110, 0),
+    rgb(60, 205, 224), */ rgba(110, 110, 110, 0),
+    rgb(228, 12, 248),
+    rgb(60, 205, 224),
+    rgb(228, 12, 248),
+    rgba(110, 110, 110, 0)
+  );
+}
+
+.post-settings {
+  display: grid;
+  justify-content: left;
+  h3,
+  h4,
+  p {
+    margin: 0;
+  }
+  h3 {
+    margin-top: 2rem;
+  }
+  p {
+    margin-bottom: 2rem;
+  }
 }

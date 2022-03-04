@@ -4,8 +4,8 @@ function Home() {
   return (
     <>
       <main>
-        <h2>Home</h2>
-        <p>Some text here as well</p>
+        <h2>Home of Chris</h2>
+        <p>Software Developer</p>
       </main>
     </>
   );
