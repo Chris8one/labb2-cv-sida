@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Space+Mono&display=swap');
+
+
+
 .App {
   text-align: center;
 }
@@ -73,32 +77,36 @@ ul {
   background-image: linear-gradient(
     to right,
     /* rgba(110, 110, 110, 0),
-    rgb(60, 205, 224), */ rgb(228, 12, 248),
+    rgb(60, 205, 224), */ 
     rgba(110, 110, 110, 0),
-    rgb(60, 205, 224),
-    rgba(110, 110, 110, 0),
-    rgb(228, 12, 248)
-  );
-}
-
-.hr-grad-post {
-  border: 0;
-  height: 3px;
-  width: 40%;
-  background-image: linear-gradient(
-    to right,
-    /* rgba(110, 110, 110, 0),
-    rgb(60, 205, 224), */ rgba(110, 110, 110, 0),
     rgb(228, 12, 248),
+    rgb(60, 205, 224),
+    rgb(60, 205, 224),
     rgb(60, 205, 224),
     rgb(228, 12, 248),
     rgba(110, 110, 110, 0)
   );
 }
 
+.hr-grad-post {
+  // border: 0;
+  height: 1px;
+  width: 40%;
+  margin-top: 2rem;
+  // background-image: linear-gradient(
+  //   to right,
+  //   rgba(110, 110, 110, 0),
+  //   rgb(228, 12, 248),
+  //   rgb(60, 205, 224),
+  //   rgb(60, 205, 224),
+  //   rgb(228, 12, 248),
+  //   rgba(110, 110, 110, 0)
+  // );
+}
+
 .post-settings {
   display: grid;
-  justify-content: left;
+  // justify-content: left;
   h3,
   h4,
   p {
@@ -107,7 +115,46 @@ ul {
   h3 {
     margin-top: 2rem;
   }
+}
+
+.button {
+  background-color: #3ccde0;
+  border: 1px;
+  border-radius: 5px;
+  height: 1.6rem;
+  margin: .2rem;
+  a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+    margin: .1rem;
+  }
+}
+
+.repos-container {
+  margin: 0 auto;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
+  justify-items: center;
+}
+
+.repos-div {
+  h3 {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
   p {
-    margin-bottom: 2rem;
+    margin-top: 0;
+  }
+}
+
+.logo-div {
+  display: inline-block;
+  // background-color: #dddddd;
+  border-radius: 5%;
+  .logo {
+    width: 20rem;
   }
 }

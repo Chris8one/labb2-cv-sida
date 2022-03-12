@@ -1,90 +1,40 @@
 import React from 'react';
-
-const reposName = [];
-const reposDesc = [];
+import './Style.css';
 
 export default class GetData extends React.Component {
-  state = {
-    loading: true,
-    name: null,
-    desc: null
+  constructor(props) {
+    super(props);
+    this.state = {
+      items: [],
+      dataIsLoaded: false
+    };
   }
 
-  async fetchData() {
-    const gitUrl = "https://api.github.com/users/Chris8one/repos";
-    const response = await fetch(gitUrl);
-    const data = await response.json();
-
-    for (let i = 0; i < data.length; i++) {
-      this.setState({name: data[i].name, desc: data[i].description, loading: false})
-      reposName.push(this.state.name);
-      reposDesc.push(this.state.desc);
-    }
+  componentDidMount() {
+    fetch("https://api.github.com/users/chris8one/repos")
+    .then((res) => res.json())
+    .then((json) => {
+      this.setState({
+        items: json,
+        dataIsLoaded: true
+      });
+    })
   }
-  
+
   render() {
-    function gitReposName(repo) {
-      return <p>{repo}</p>;
-    }
-    function gitReposDesc(repo) {
-      return <p>{repo}</p>;
-    }
-    return <div>{ this.state.loading ? 
-      <div>Loading..</div> : <div>
-        <div>
-          <h3>Github Repositories</h3>
-          <h3>{this.reposName.map(gitReposName)}</h3>
-          <h3>{this.reposDesc.map(gitReposDesc)}</h3>
+    const { items, dataIsLoaded } = this.state;
+    if (!dataIsLoaded) return <div className="loading-indication"><h3>Loading...</h3></div>;
+    return (
+      <div className="repos-container">
+        { items.map((item) => (<div className="repos-div">
+          <h3 key={item.id}>{item.name}</h3>
+          <p key={item.id}>{item.description}</p>
+          <button className="button" key={item.id}><a href={item.html_url} target="blank">Github Repo</a></button><br/>
+          { item.homepage === null ? "" : <button className="button" key={item.id}><a href={item.homepage} target="blank">Live Site</a></button> }
+          <hr className="hr-grad-post" />
         </div>
-      </div> }
-    </div>;
+        )) }
+      </div>
+    );
   }
 }
-
-// import React from 'react'
-// import "./css/Portfolio.css"
-
-// const repos = [];
-// const reposDesc = [];
-// let displayRepos = [];
-// export default class FetchData extends React.Component{
-    
-//     state ={
-//         loading:true,
-//         name: null,
-//         desc: null
-//     }
-
-//     async componentDidMount(){
-//         const url = `https://api.github.com/users/OliviaLeonieWalter/repos`;
-//         const response = await fetch(url);
-//         const data = await response.json();
-
-//         for(let i  = 0; i < data.length; i++){
-//             this.setState({name: data[i].name, desc: data[i].description, loading: false})
-//             repos.push(this.state.name);
-//             reposDesc.push(this.state.desc);
-//         }
-    
-//     }
-
-//     render() {
-        
-//         function displayGitRepo(repo){
-//             return <p key={repo}>{repo}</p>;
-//         }
-//         function displayGitRepoDesc(repo){
-//             return <p key={repo}>{repo}</p>
-//         }
-//         return <div>{this.state.loading ? 
-//         <div className='github-data'>loading...</div> : 
-//             <div className='github-data'>
-//                 <div>
-//                     <h1 className='github-title'>Github Repositories</h1>
-//                     <h1 className='githubrepo-title'>{repos.map(displayGitRepo)}</h1>
-//                     <h2 className='githubrepo-desc'>{reposDesc.map(displayGitRepoDesc)}</h2>
-//                 </div>
-//             </div>}
-//         </div>;
-//     }
-// }

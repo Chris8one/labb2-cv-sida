@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Space+Mono&display=swap");
 .App {
   text-align: center;
 }
@@ -78,19 +79,17 @@ ul li a {
 .hr-grad {
   border: 0;
   height: 3px;
-  background-image: linear-gradient(to right, #e40cf8, rgba(110, 110, 110, 0), #3ccde0, rgba(110, 110, 110, 0), #e40cf8);
+  background-image: linear-gradient(to right, rgba(110, 110, 110, 0), #e40cf8, #3ccde0, #3ccde0, #3ccde0, #e40cf8, rgba(110, 110, 110, 0));
 }
 
 .hr-grad-post {
-  border: 0;
-  height: 3px;
+  height: 1px;
   width: 40%;
-  background-image: linear-gradient(to right, rgba(110, 110, 110, 0), #e40cf8, #3ccde0, #e40cf8, rgba(110, 110, 110, 0));
+  margin-top: 2rem;
 }
 
 .post-settings {
   display: grid;
-  justify-content: left;
 }
 .post-settings h3,
 .post-settings h4,
@@ -100,6 +99,42 @@ ul li a {
 .post-settings h3 {
   margin-top: 2rem;
 }
-.post-settings p {
-  margin-bottom: 2rem;
+
+.button {
+  background-color: #3ccde0;
+  border: 1px;
+  border-radius: 5px;
+  height: 1.6rem;
+  margin: 0.2rem;
+}
+.button a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+  margin: 0.1rem;
+}
+
+.repos-container {
+  margin: 0 auto;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
+  justify-items: center;
+}
+
+.repos-div h3 {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+.repos-div p {
+  margin-top: 0;
+}
+
+.logo-div {
+  display: inline-block;
+  border-radius: 5%;
+}
+.logo-div .logo {
+  width: 20rem;
 }/*# sourceMappingURL=Style.css.map */
