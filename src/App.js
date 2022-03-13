@@ -6,19 +6,23 @@ import Portfolio from "./Portfolio";
 import CV from "./CV";
 import About from "./About";
 import NoPage from "./NoPage";
+import Footer from './Footer';
 import "./Style.css";
 
 function App() {
   return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<HomeNav />} />
-        <Route path="portfolio" element={<PortfolioNav />} />
-        <Route path="cv" element={<CVNav />} />
-        <Route path="about" element={<AboutNav />} />
-        <Route path="*" element={<NoPage />} />
-      </Routes>
-    </div>
+    <>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<HomeNav />} />
+          <Route path="portfolio" element={<PortfolioNav />} />
+          <Route path="cv" element={<CVNav />} />
+          <Route path="about" element={<AboutNav />} />
+          <Route path="*" element={<NoPage />} />
+        </Routes>
+      </div>
+      <Footer />
+    </>
   );
 }
 

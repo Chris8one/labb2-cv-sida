@@ -32,6 +32,10 @@
   color: #61dafb;
 }
 
+h2, h3, p {
+  font-family: Poppins;
+}
+
 ul {
   margin-bottom: 0;
   padding-bottom: 0;
@@ -104,9 +108,13 @@ ul {
   // );
 }
 
+.hr-grad-repo {
+  height: 1px;
+  margin-top: 2rem;
+}
+
 .post-settings {
   display: grid;
-  // justify-content: left;
   h3,
   h4,
   p {
@@ -125,6 +133,7 @@ ul {
   margin: .2rem;
   a {
     text-decoration: none;
+    font-family: Poppins;
     font-weight: 700;
     color: #fff;
     margin: .1rem;
@@ -142,19 +151,40 @@ ul {
 
 .repos-div {
   h3 {
+    font-family: Poppins;
     margin-top: 2rem;
     margin-bottom: 0;
   }
   p {
+    font-family: Poppins;
     margin-top: 0;
   }
 }
 
 .logo-div {
   display: inline-block;
-  // background-color: #dddddd;
   border-radius: 5%;
+  margin-top: 3rem;
   .logo {
     width: 20rem;
+  }
+}
+
+.swd {
+  font-weight: 300;
+  font-size: 4rem;
+  margin-top: 0;
+}
+
+.footer {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  p {
+    font-size: 1.3rem;
   }
 }

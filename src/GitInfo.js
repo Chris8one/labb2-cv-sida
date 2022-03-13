@@ -31,7 +31,7 @@ export default class GetData extends React.Component {
           <p key={item.id}>{item.description}</p>
           <button className="button" key={item.id}><a href={item.html_url} target="blank">Github Repo</a></button><br/>
           { item.homepage === null ? "" : <button className="button" key={item.id}><a href={item.homepage} target="blank">Live Site</a></button> }
-          <hr className="hr-grad-post" />
+          <hr className="hr-grad-repo" />
         </div>
         )) }
       </div>
