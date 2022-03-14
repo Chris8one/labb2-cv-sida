@@ -8,7 +8,7 @@ function CV() {
         <h2>Work/Education</h2>
         {Data.map((post) => {
           return (
-            <div className="post-settings" key={post.id}>
+            <div className="post-div" key={post.id}>
               <h3>{post.job}</h3>
               <h4>{post.date}</h4>
               <p>{post.position}</p>

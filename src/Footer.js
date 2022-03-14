@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => (
     <div className="footer">
       <hr className="hr-grad" />
-      <p>Footer</p>
+      <p>&copy; Chris of Sweden</p>
     </div>
   )
 

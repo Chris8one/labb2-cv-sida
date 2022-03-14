@@ -5,7 +5,7 @@ function Home() {
   return (
     <>
       <main>
-        <h2>Chris Granbäck</h2>
+        {/* <h2>Chris Granbäck</h2> */}
         <div className="logo-div">
           <img className="logo" src={logo} alt="Code logo"/>
           <h3 className="swd">Software Developer</h3>
