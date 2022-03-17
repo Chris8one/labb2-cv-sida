@@ -1,7 +1,7 @@
 import Header from './Header';
 import { Outlet as Content } from 'react-router-dom';
 
-export function Page() {
+function Page() {
   return (
     <>
       <Header />
@@ -11,3 +11,5 @@ export function Page() {
     </>
   );
 };
+
+export default Page;
