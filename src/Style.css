@@ -29,7 +29,9 @@ body {
   color: #61dafb;
 }
 
-h2, h3, p {
+h2,
+h3,
+p {
   font-family: Poppins;
 }
 
@@ -56,6 +58,15 @@ ul li a {
   font-weight: 500;
 }
 
+.nav-container {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  padding: 1rem;
+  background-color: #fff;
+}
+
 .nav-attr {
   display: flex;
   flex-direction: row;
@@ -65,8 +76,9 @@ ul li a {
 
 .hr-grad {
   border: 0;
+  margin: 0;
   height: 3px;
-  background-image: linear-gradient(to right, rgba(110, 110, 110, 0), #e40cf8, #3ccde0, #3ccde0, #3ccde0, #e40cf8, rgba(110, 110, 110, 0));
+  background-image: linear-gradient(to right, rgba(110, 110, 110, 0), rgb(228, 12, 248), rgb(60, 205, 224), rgb(60, 205, 224), rgb(60, 205, 224), rgb(228, 12, 248), rgba(110, 110, 110, 0));
 }
 
 .hr-grad-post {
@@ -92,12 +104,13 @@ ul li a {
   margin-top: 2rem;
   font-weight: 500;
 }
-.post-div h4, .post-div p {
+.post-div h4,
+.post-div p {
   font-weight: 400;
 }
 
 .button {
-  background-image: linear-gradient(to right, #e40cf8, #3ccde0);
+  background-image: linear-gradient(to right, rgb(228, 12, 248), rgb(60, 205, 224));
   border: 1px;
   border-radius: 5px;
   height: 1.6rem;
@@ -111,8 +124,21 @@ ul li a {
   margin: 0.1rem;
 }
 
+.portfolio-container {
+  padding-top: 80px;
+}
+
+.about-container {
+  padding-top: 80px;
+}
+
+.cv-container {
+  padding-top: 80px;
+}
+
 .repos-container {
   margin: 0 auto;
+  padding-bottom: 80px;
   width: 60%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -135,6 +161,7 @@ ul li a {
 .logo-div {
   height: 100%;
   width: 100%;
+  padding-top: 80px;
   align-items: center;
 }
 .logo-div .logo {
@@ -148,10 +175,11 @@ ul li a {
 
 .footer {
   position: fixed;
-  bottom: 0;
-  padding: 1rem;
-  background-color: #fff;
   width: 100%;
+  height: 40px;
+  bottom: 0;
+  padding-bottom: 1rem;
+  background-color: #fff;
   font-size: 1rem;
 }
 .footer p {

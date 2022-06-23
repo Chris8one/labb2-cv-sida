@@ -30,13 +30,16 @@ body {
   color: #61dafb;
 }
 
-h2, h3, p {
+h2,
+h3,
+p {
   font-family: Poppins;
 }
 
 ul {
   margin-bottom: 0;
   padding-bottom: 0;
+
   li {
     list-style-type: none;
     text-decoration: none;
@@ -44,6 +47,7 @@ ul {
     width: calc(100% / 12);
     height: 60px;
     text-align: center;
+
     a {
       text-decoration: none;
       font-weight: 500;
@@ -57,6 +61,15 @@ ul {
   font-weight: 500;
 }
 
+.nav-container {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  padding: 1rem;
+  background-color: #fff;
+}
+
 .nav-attr {
   display: flex;
   flex-direction: row;
@@ -66,19 +79,18 @@ ul {
 
 .hr-grad {
   border: 0;
+  margin: 0;
   height: 3px;
-  background-image: linear-gradient(
-    to right,
-    /* rgba(110, 110, 110, 0),
-    rgb(60, 205, 224), */ 
-    rgba(110, 110, 110, 0),
-    rgb(228, 12, 248),
-    rgb(60, 205, 224),
-    rgb(60, 205, 224),
-    rgb(60, 205, 224),
-    rgb(228, 12, 248),
-    rgba(110, 110, 110, 0)
-  );
+  background-image: linear-gradient(to right,
+      /* rgba(110, 110, 110, 0),
+    rgb(60, 205, 224), */
+      rgba(110, 110, 110, 0),
+      rgb(228, 12, 248),
+      rgb(60, 205, 224),
+      rgb(60, 205, 224),
+      rgb(60, 205, 224),
+      rgb(228, 12, 248),
+      rgba(110, 110, 110, 0));
 }
 
 .hr-grad-post {
@@ -104,16 +116,20 @@ ul {
 
 .post-div {
   display: grid;
+
   h3,
   h4,
   p {
     margin: 0;
   }
+
   h3 {
     margin-top: 2rem;
     font-weight: 500;
   }
-  h4, p {
+
+  h4,
+  p {
     font-weight: 400;
   }
 
@@ -121,15 +137,14 @@ ul {
 
 .button {
   // background-color: #3ccde0;
-  background-image: linear-gradient(
-    to right,
-    rgb(228,12,248),
-    rgb(60, 205, 224)
-  );
+  background-image: linear-gradient(to right,
+      rgb(228, 12, 248),
+      rgb(60, 205, 224));
   border: 1px;
   border-radius: 5px;
   height: 1.6rem;
   margin: .2rem;
+
   a {
     text-decoration: none;
     font-family: Poppins;
@@ -139,8 +154,21 @@ ul {
   }
 }
 
+.portfolio-container {
+  padding-top: 80px;
+}
+
+.about-container {
+  padding-top: 80px;
+}
+
+.cv-container {
+  padding-top: 80px;
+}
+
 .repos-container {
   margin: 0 auto;
+  padding-bottom: 80px;
   width: 60%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -155,6 +183,7 @@ ul {
     margin-top: 2rem;
     margin-bottom: 0;
   }
+
   p {
     font-family: Poppins;
     font-weight: 400;
@@ -165,13 +194,16 @@ ul {
 .logo-div {
   height: 100%;
   width: 100%;
+  padding-top: 80px;
   align-items: center;
+
   // display: inline-block;
   // border-radius: 5%;
   // margin-top: 10rem;
   .logo {
     width: 20rem;
   }
+
   .swd {
     font-weight: 300;
     font-size: 4rem;
@@ -181,11 +213,13 @@ ul {
 
 .footer {
   position: fixed;
-  bottom: 0;
-  padding: 1rem;
-  background-color: #fff;
   width: 100%;
+  height: 40px;
+  bottom: 0;
+  padding-bottom: 1rem;
+  background-color: #fff;
   font-size: 1rem;
+
   p {
     float: right;
     margin-right: 3rem;

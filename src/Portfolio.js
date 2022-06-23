@@ -3,7 +3,7 @@ import GitInfo from './GitInfo';
 
 function Portfolio() {
   return (
-    <div>
+    <div class="portfolio-container">
       <h2>My Github Repos</h2>
       <GitInfo />
     </div>

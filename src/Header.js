@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 function Header() {
   return (
-    <div>
+    <div class="nav-container">
       <header>
         <nav>
           <ul>
