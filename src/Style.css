@@ -126,14 +126,22 @@ ul li a {
 
 .portfolio-container {
   padding-top: 80px;
+  padding-bottom: 60px;
 }
 
 .about-container {
   padding-top: 80px;
+  padding-bottom: 60px;
 }
 
 .cv-container {
   padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.error-container {
+  padding-top: 80px;
+  padding-bottom: 60px;
 }
 
 .repos-container {
@@ -144,6 +152,12 @@ ul li a {
   grid-template-columns: 1fr 1fr;
   flex-wrap: wrap;
   justify-items: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .repos-div h3 {
@@ -158,19 +172,26 @@ ul li a {
   margin-top: 0;
 }
 
-.logo-div {
+.logo-container {
   height: 100%;
   width: 100%;
   padding-top: 80px;
   align-items: center;
+  justify-items: center;
 }
-.logo-div .logo {
-  width: 20rem;
+
+.logo-div {
+  width: 100%;
 }
-.logo-div .swd {
+
+.swd {
   font-weight: 300;
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin-top: 0;
+}
+
+.logo {
+  width: 20rem;
 }
 
 .footer {

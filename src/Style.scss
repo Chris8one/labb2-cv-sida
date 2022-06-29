@@ -156,14 +156,22 @@ ul {
 
 .portfolio-container {
   padding-top: 80px;
+  padding-bottom: 60px;
 }
 
 .about-container {
   padding-top: 80px;
+  padding-bottom: 60px;
 }
 
 .cv-container {
   padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.error-container {
+  padding-top: 80px;
+  padding-bottom: 60px;
 }
 
 .repos-container {
@@ -174,6 +182,12 @@ ul {
   grid-template-columns: 1fr 1fr;
   flex-wrap: wrap;
   justify-items: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .repos-div {
@@ -191,24 +205,33 @@ ul {
   }
 }
 
-.logo-div {
+.logo-container {
   height: 100%;
   width: 100%;
   padding-top: 80px;
   align-items: center;
+  justify-items: center;
+}
 
+.herotext-div {}
+
+.logo-div {
+  width: 100%;
   // display: inline-block;
   // border-radius: 5%;
   // margin-top: 10rem;
-  .logo {
-    width: 20rem;
-  }
 
-  .swd {
-    font-weight: 300;
-    font-size: 4rem;
-    margin-top: 0;
-  }
+
+}
+
+.swd {
+  font-weight: 300;
+  font-size: 3.5rem;
+  margin-top: 0;
+}
+
+.logo {
+  width: 20rem;
 }
 
 .footer {

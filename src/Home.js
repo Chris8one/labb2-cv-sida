@@ -5,10 +5,14 @@ function Home() {
   return (
     <>
       <main>
-        <div className="logo-div">
-          <img className="logo" src={logo} alt="Code logo"/>
+      <div className="logo-container">
+        <div className="herotext-div">
           <h3 className="swd">Software Developer</h3>
         </div>
+        <div className="logo-div">
+          <img className="logo" src={logo} alt="Code logo"/>
+        </div>
+      </div>
       </main>
     </>
   );
