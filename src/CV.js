@@ -4,7 +4,7 @@ import Data from "./data.json";
 function CV() {
   return (
     <>
-      <main class="cv-container">
+      <main className="cv-container">
         <h2>Work/Education</h2>
         {Data.map((post) => {
           return (

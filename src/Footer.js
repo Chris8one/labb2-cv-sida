@@ -1,10 +1,10 @@
 import React from 'react';
-import ChangeBackgroundColor from './EasterEggs';
+import ChangeBackgroundColor from './EasterEgg';
 
 const Footer = () => (
     <div className="footer">
       <hr className="hr-grad" />
-      <p id="easterOne" onClick={() => {this.ChangeBackgroundColor()}}>&copy; Chris of Sweden</p>
+      <p id="easterOne" onClick={() => {ChangeBackgroundColor()}}>&copy; Chris of Sweden</p>
     </div>
   );
 
