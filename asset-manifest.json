@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/labb2-cv-sida/static/css/main.884012f9.css",
-    "main.js": "/labb2-cv-sida/static/js/main.c1e73abf.js",
+    "main.js": "/labb2-cv-sida/static/js/main.1f7efbe0.js",
     "static/media/logo.png": "/labb2-cv-sida/static/media/logo.0264d1ecaffc267a2418.png",
     "index.html": "/labb2-cv-sida/index.html",
     "main.884012f9.css.map": "/labb2-cv-sida/static/css/main.884012f9.css.map",
-    "main.c1e73abf.js.map": "/labb2-cv-sida/static/js/main.c1e73abf.js.map"
+    "main.1f7efbe0.js.map": "/labb2-cv-sida/static/js/main.1f7efbe0.js.map"
   },
   "entrypoints": [
     "static/css/main.884012f9.css",
-    "static/js/main.c1e73abf.js"
+    "static/js/main.1f7efbe0.js"
   ]
 }
