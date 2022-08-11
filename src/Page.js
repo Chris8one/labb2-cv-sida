@@ -1,4 +1,5 @@
 import Header from './Header';
+import Footer from './Footer';
 import { Outlet as Content } from 'react-router-dom';
 
 function Page() {
@@ -8,6 +9,7 @@ function Page() {
       <main>
         <Content />
       </main>
+      <Footer />
     </>
   );
 };
