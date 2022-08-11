@@ -4,7 +4,6 @@ import Home from "./Home";
 import Portfolio from "./Portfolio";
 import CV from "./CV";
 import About from "./About";
-import NoPage from "./NoPage";
 import Footer from './Footer';
 import Page from './Page';
 import "./Style.css";
