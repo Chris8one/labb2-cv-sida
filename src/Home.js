@@ -1,9 +1,7 @@
 import React from "react";
 import logo from './Assets/Images/logo.png';
-import HiddenMessage from "./HiddenMessage";
 
 function Home() {
-  HiddenMessage();
   return (
     <>
       <main>
