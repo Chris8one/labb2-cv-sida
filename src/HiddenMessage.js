@@ -7,7 +7,7 @@ const HiddenMessage = () => {
         keyStrokes.push(key);
         keyStrokes.splice(-easterEgg.length - 1, keyStrokes.length - easterEgg.length);
         if (keyStrokes.join('').includes(easterEgg)) {
-          alert('Dingading dang, my dangalong linglong..');
+          alert('Dingading dang, my dangalong linglong..!');
         }
       })
     )
