@@ -20,7 +20,6 @@ function App() {
               <Route path="portfolio" element={<Portfolio />} />
               <Route path="cv" element={<CV />} />
               <Route path="about" element={<About />} />
-              <Route path="*" element={<NoPage />} />
             </Route>
           </Routes>
         </Router>
