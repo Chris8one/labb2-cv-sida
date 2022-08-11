@@ -5,11 +5,14 @@ import Portfolio from "./Portfolio";
 import CV from "./CV";
 import About from "./About";
 import Page from './Page';
+import Header from './Header';
+import Footer from './Footer';
 import "./Style.css";
 
 function App() {
   return (
     <>
+      <Header />
       <div className="App">
         <Router>
           <Routes>
@@ -22,6 +25,7 @@ function App() {
           </Routes>
         </Router>
       </div>
+      <Footer />
     </>
   );
 }

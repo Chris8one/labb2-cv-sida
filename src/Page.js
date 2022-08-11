@@ -7,11 +7,9 @@ function Page() {
   HiddenMessage();
   return (
     <>
-      <Header />
       <main>
         <Content />
       </main>
-      <Footer />
     </>
   );
 };
