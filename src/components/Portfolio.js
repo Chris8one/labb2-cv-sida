@@ -1,5 +1,5 @@
 import React from 'react';
-import GitInfo from './GitInfo';
+import GitInfo from './components/GitInfo';
 
 function Portfolio() {
   return (

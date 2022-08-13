@@ -1,29 +1,29 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Home from "./Home";
-import Portfolio from "./Portfolio";
-import CV from "./CV";
-import About from "./About";
-import Page from './Page';
-import Header from './Header';
-import Footer from './Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Page from './components/Page';
+import Home from "./components/Home";
+import Portfolio from "./components/Portfolio";
+import CV from "./components/CV";
+import About from "./components/About";
+import NoPage from "./components/NoPage";
 import "./Style.css";
 
 function App() {
   return (
     <>
-      <Header />
       <div className="App">
-        <Routes>
-          <Route path="/" element={<Page />}>
-            <Route index element={<Home />} />
-            <Route path="portfolio" element={<Portfolio />} />
-            <Route path="cv" element={<CV />} />
-            <Route path="about" element={<About />} />
-          </Route>
-        </Routes>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Page />}>
+              <Route index element={<Home />} />
+              <Route path="portfolio" element={<Portfolio />} />
+              <Route path="cv" element={<CV />} />
+              <Route path="about" element={<About />} />
+              <Route path="*" element={<NoPage />} />
+            </Route>
+          </Routes>
+        </Router>
       </div>
-      <Footer />
     </>
   );
 }

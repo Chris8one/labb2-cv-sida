@@ -1,5 +1,5 @@
 import React from 'react';
-import ChangeBackgroundColor from './EasterEgg';
+import ChangeBackgroundColor from './components/EasterEgg';
 
 const Footer = () => (
     <div className="footer">

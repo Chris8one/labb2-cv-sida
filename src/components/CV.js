@@ -1,5 +1,5 @@
 import React from "react";
-import Data from "./data.json";
+import Data from "./components/data.json";
 
 function CV() {
   return (
