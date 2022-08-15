@@ -1,7 +1,8 @@
-import Header from './components/Header';
-import Footer from './components/Footer';
+
+import Footer from './Footer';
 import { Outlet as Content } from 'react-router-dom';
-import HiddenMessage from "./components/HiddenMessage";
+import HiddenMessage from "./HiddenMessage";
+import Header from './Header';
 
 function Page() {
   HiddenMessage();
